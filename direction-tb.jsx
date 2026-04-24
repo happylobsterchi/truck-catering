@@ -120,7 +120,7 @@ function TruckDirectionB() {
       </section>
 
       {/* Inquiry — cream panel */}
-      <section className="inquiry">
+      <section id="inquiry" className="inquiry">
         <div className="bar-wrap inquiry-grid">
           <div className="inquiry-lede">
             <div className="eye">Book the truck</div>
