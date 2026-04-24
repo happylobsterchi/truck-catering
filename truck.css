@@ -258,3 +258,50 @@
 .dirTB .field textarea { resize: vertical; min-height: 110px; }
 .dirTB .form-cta { margin-top: 22px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
 .dirTB .form-cta .fine { font-family: var(--font-serif); font-style: italic; font-size: 13px; color: var(--hl-stone); max-width: 40ch; }
+
+/* =====================================================
+   DIRECTION TB — MOBILE (≤720px)
+   Collapse multi-column grids to single / 2-col layouts.
+   ===================================================== */
+@media (max-width: 720px) {
+  /* Hero */
+  .dirTB .hero { min-height: auto; }
+  .dirTB .hero-overlay { padding: 48px 0 72px; min-height: 620px; }
+  .dirTB .hero-bot { grid-template-columns: 1fr; gap: 28px; align-items: stretch; }
+  .dirTB .hero-badge { width: 88px; height: 88px; }
+  .dirTB .hero-sub { font-size: 17px; margin-top: 20px; }
+  .dirTB .hero-ctas { align-items: stretch; flex-direction: column; gap: 12px; }
+  .dirTB .hero-ctas .bar-btn { width: 100%; text-align: center; }
+
+  /* One Truck / Every Occasion — card grid */
+  .dirTB .offering { padding: 64px 0; }
+  .dirTB .off-head.centered { margin-bottom: 36px; }
+  .dirTB .off-grid { grid-template-columns: 1fr; gap: 20px; }
+  .dirTB .off-card .photo { aspect-ratio: 16/9; }
+  .dirTB .off-card .body { padding: 22px 22px 26px; }
+
+  /* Jeff Mauro pull quote */
+  .dirTB .pullquote { padding: 72px 0; }
+  .dirTB .pullquote::before { font-size: 280px; top: -30px; }
+
+  /* Booking steps */
+  .dirTB .how { padding: 64px 0; }
+  .dirTB .how-head.centered { margin-bottom: 36px; }
+  .dirTB .steps { grid-template-columns: 1fr 1fr; }
+  .dirTB .step { padding: 24px 20px; }
+  .dirTB .step .num { font-size: 44px; margin-bottom: 14px; }
+  .dirTB .step h3 { font-size: 17px; }
+  .dirTB .step p { font-size: 14.5px; }
+
+  /* Inquiry form */
+  .dirTB .inquiry { padding: 64px 0; }
+  .dirTB .inquiry-grid { grid-template-columns: 1fr; gap: 40px; }
+  .dirTB .inquiry-lede p { max-width: 100%; }
+  .dirTB .contact-card { padding: 20px 22px; }
+  .dirTB .contact-card .row { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .dirTB .form { padding: 28px 22px 24px; border-radius: 18px; }
+  .dirTB .form-grid { grid-template-columns: 1fr; gap: 16px; }
+  .dirTB .form-cta { flex-direction: column; align-items: stretch; }
+  .dirTB .form-cta .fine { text-align: center; }
+  .dirTB .form-cta .bar-btn { width: 100%; text-align: center; }
+}
