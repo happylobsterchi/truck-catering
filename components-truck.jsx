@@ -46,13 +46,12 @@ function TruckInquiryForm() {
       <input type="hidden" name="_subject" value="New Happy Lobster Truck inquiry" />
       <div className="form-grid">
         <div className="field"><label>Your name</label><input name="name" type="text" placeholder="Alex Thompson" required /></div>
-        <div className="field"><label>Company / Host</label><input name="company" type="text" placeholder="Acme Inc." /></div>
         <div className="field"><label>Email</label><input name="email" type="email" placeholder="you@company.com" required /></div>
-        <div className="field"><label>Phone</label><input name="phone" type="tel" placeholder="(312) 555-0100" /></div>
-        <div className="field"><label>Event date</label><input name="event_date" type="date" /></div>
-        <div className="field"><label>Guest count</label><input name="guest_count" type="number" placeholder="150" min="30" /></div>
+        <div className="field"><label>Phone</label><input name="phone" type="tel" placeholder="(312) 555-0100" required /></div>
+        <div className="field"><label>Event date</label><input name="event_date" type="date" required /></div>
+        <div className="field"><label>Guest count</label><input name="guest_count" type="number" placeholder="150" min="30" required /></div>
         <div className="field"><label>Event type</label>
-          <select name="event_type" defaultValue="">
+          <select name="event_type" defaultValue="" required>
             <option value="" disabled>Choose one…</option>
             <option>Corporate / office lunch</option>
             <option>Wedding</option>
@@ -62,28 +61,8 @@ function TruckInquiryForm() {
             <option>Other</option>
           </select>
         </div>
-        <div className="field"><label>Location</label>
-          <select name="location" defaultValue="">
-            <option value="" disabled>Where are we rolling?</option>
-            <option>Chicago — downtown / Loop</option>
-            <option>Chicago — North side</option>
-            <option>Chicago — South / West side</option>
-            <option>Chicagoland suburbs</option>
-            <option>Out-of-town (ask us)</option>
-          </select>
-        </div>
-        <div className="field"><label>Est. guest count</label>
-          <select name="guest_count_range" defaultValue="">
-            <option value="" disabled>Ballpark…</option>
-            <option>30 – 75</option>
-            <option>75 – 150</option>
-            <option>150 – 300</option>
-            <option>300 – 600</option>
-            <option>600+</option>
-          </select>
-        </div>
-        <div className="field full"><label>Venue / address</label><input name="venue" type="text" placeholder="Where should the truck park?" /></div>
-        <div className="field full"><label>Tell us about it</label><textarea name="notes" placeholder="Setup window, power/water access, ceremony timing, vibe — anything we should know." /></div>
+        <div className="field full"><label>Venue / address</label><input name="venue" type="text" placeholder="Where should the truck park?" required /></div>
+        <div className="field full"><label>Tell us about it</label><textarea name="notes" placeholder="Setup window, power/water access, ceremony timing, vibe — anything we should know." required /></div>
       </div>
       {error && <div style={{color:'var(--hl-coral)', fontFamily:'var(--font-serif)', fontStyle:'italic', margin:'12px 0'}}>{error}</div>}
       <div className="form-cta">
