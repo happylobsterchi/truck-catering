@@ -20,16 +20,16 @@ function TruckDirectionB() {
               <p className="hero-sub">From backyard blowouts to full-tilt events, we always show up, claws up and ready to roll!</p>
             </div>
             <div className="hero-ctas">
-  
-    className="bar-btn bar-btn-primary"
-    href="#inquiry"
-    onClick={(e) => {
-      e.preventDefault();
-      const el = document.getElementById('inquiry');
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }}
-  >Book the truck</a>
-</div>
+              <a
+                className="bar-btn bar-btn-primary"
+                href="#inquiry"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById('inquiry');
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+              >Book the truck</a>
+            </div>
           </div>
         </div>
       </section>
