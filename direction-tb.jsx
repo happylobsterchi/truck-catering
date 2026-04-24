@@ -3,7 +3,7 @@
 function TruckDirectionB() {
   return (
     <div className="dirTB">
-      <BarNav variant="navy" activeKey="truck" />
+    
 
       {/* HERO — full bleed */}
       <section className="hero">
@@ -137,7 +137,7 @@ function TruckDirectionB() {
         </div>
       </section>
 
-      <BarFooter />
+  
     </div>
   );
 }
