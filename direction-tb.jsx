@@ -125,7 +125,7 @@ function TruckDirectionB() {
           <div className="inquiry-lede">
             <div className="eye">Book the truck</div>
             <h2>Ready to <em className="roll">Roll?</em></h2>
-            <p>The truck is the easy part. We handle setup, permits, power, and cleanup. You pick a date and we roll up.</p>
+            <p>The truck is the easy part. We handle setup and cleanup. You pick a date and we roll up.</p>
             <div className="contact-card">
        
               <div className="row"><span className="lbl">Email</span> <span className="val">hello@happylobsterchicago.com</span></div>
