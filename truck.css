@@ -270,8 +270,8 @@
   .dirTB .hero-bot { grid-template-columns: 1fr; gap: 28px; align-items: stretch; }
   .dirTB .hero-badge { width: 88px; height: 88px; }
   .dirTB .hero-sub { font-size: 17px; margin-top: 20px; }
-  .dirTB .hero-ctas { align-items: stretch; flex-direction: column; gap: 12px; }
-  .dirTB .hero-ctas .bar-btn { width: 100%; text-align: center; }
+  .dirTB .hero-ctas { align-items: center; flex-direction: column; gap: 12px; }
+  .dirTB .hero-ctas .bar-btn { width: auto; text-align: center; }
 
   /* One Truck / Every Occasion — card grid */
   .dirTB .offering { padding: 64px 0; }
@@ -301,7 +301,7 @@
   .dirTB .contact-card .row { flex-direction: column; align-items: flex-start; gap: 2px; }
   .dirTB .form { padding: 28px 22px 24px; border-radius: 18px; }
   .dirTB .form-grid { grid-template-columns: 1fr; gap: 16px; }
-  .dirTB .form-cta { flex-direction: column; align-items: stretch; }
+  .dirTB .form-cta { flex-direction: column; align-items: center; }
   .dirTB .form-cta .fine { text-align: center; }
-  .dirTB .form-cta .bar-btn { width: 100%; text-align: center; }
+  .dirTB .form-cta .bar-btn { width: auto; text-align: center; }
 }
