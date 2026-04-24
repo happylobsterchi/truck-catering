@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Lobster Truck · Chicago's Premier Food Truck</title>
+<meta name="description" content="Chicago's premier food truck. Weddings, corporate events, festivals, block parties. From backyard blowouts to full-tilt events, we always show up claws up." />
+<meta property="og:title" content="Happy Lobster Truck · Chicago's Premier Food Truck" />
+<meta property="og:description" content="Weddings, corporate events, festivals, block parties — we roll wherever the party is." />
+<meta property="og:image" content="assets/truck-rainbow.png" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="assets/happy-claw.png" />
+<link rel="stylesheet" href="colors_and_type.css" />
+<link rel="stylesheet" href="bar.css" />
+<link rel="stylesheet" href="truck.css" />
+<script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+<style>
+  /* Strip the design-canvas artboard scaffolding — this page renders standalone */
+  body { margin: 0; background: var(--hl-cream); }
+  #root { width: 100%; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="components-shared.jsx"></script>
+<script type="text/babel" src="components-truck.jsx"></script>
+<script type="text/babel" src="direction-tb.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+  // Mount the Truck landing page. The .dirTB namespace on all CSS means we just
+  // render <TruckDirectionB /> at the root — no canvas, no artboards, no tweaks.
+  ReactDOM.createRoot(document.getElementById('root')).render(<TruckDirectionB />);
+</script>
+</body>
+</html>
