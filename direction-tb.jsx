@@ -22,8 +22,8 @@ function TruckDirectionB() {
               <p className="hero-sub">From backyard blowouts to full-tilt events, we always show up, claws up and ready to roll!</p>
             </div>
             <div className="hero-ctas">
-              <a className="bar-btn bar-btn-primary">Book the truck</a>
-              <a className="bar-btn" style={{background:'transparent', color:'#fff', border:'1px solid rgba(255,255,255,.5)'}}>See the menu</a>
+              <a className="bar-btn bar-btn-primary" href="#inquiry">Book the truck</a>
+              
             </div>
           </div>
         </div>
