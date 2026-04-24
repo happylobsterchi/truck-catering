@@ -127,10 +127,9 @@ function TruckDirectionB() {
             <h2>Ready to <em className="roll">Roll?</em></h2>
             <p>The truck is the easy part. We handle setup, permits, power, and cleanup. You pick a date and we roll up.</p>
             <div className="contact-card">
-              <div className="row"><span className="lbl">Call</span> <span className="val">(312) 555-0101</span></div>
-              <div className="row"><span className="lbl">Text</span> <span className="val">Same number, usually faster</span></div>
-              <div className="row"><span className="lbl">Email</span> <span className="val">truck@happylobsterchicago.com</span></div>
-              <div className="row"><span className="lbl">Lead time</span> <span className="val">Two weeks minimum, sooner we'll try</span></div>
+       
+              <div className="row"><span className="lbl">Email</span> <span className="val">hello@happylobsterchicago.com</span></div>
+              <div className="row"><span className="lbl">Lead time</span> <span className="val">Two weeks preferred</span></div>
             </div>
           </div>
           <TruckInquiryForm />
