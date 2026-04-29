@@ -22,13 +22,26 @@ function TruckDirectionB() {
             <div className="hero-ctas">
               <a
                 className="bar-btn bar-btn-primary"
-                href="#inquiry"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const el = document.getElementById('inquiry');
-                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
-              >Book the truck</a>
+  href="#inquiry"
+  onClick={(e) => {
+    e.preventDefault();
+    const el = document.getElementById('inquiry');
+    if (!el) return;
+
+    const isInIframe = window.self !== window.top;
+    const isMobile = window.innerWidth < 768;
+
+    if (isInIframe && isMobile) {
+      const formTop = el.getBoundingClientRect().top + window.scrollY;
+      window.parent.postMessage(
+        { type: 'HL_SCROLL_TO_FORM', offset: formTop },
+        'https://happylobsterchicago.com'
+      );
+    } else {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }}
+>Book the truck</a>
             </div>
           </div>
         </div>
